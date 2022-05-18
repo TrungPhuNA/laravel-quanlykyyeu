@@ -1,0 +1,64 @@
+@import "./../../bases/common";
+//Plugins
+//@import "~animate.css";
+@import "~owl.carousel/dist/assets/owl.carousel.min.css";
+@import "./../../customs/custom_owl";
+//Components global
+@import "./../../components/header";
+@import "./../../components/menu_main";
+@import "./../../components/insights_slide";
+@import "./../../components/product_one";
+@import "./../../components/slider";
+@media (max-width: 767px) {
+    #menu-main {
+        display: none !important;
+    }
+    .component-slide {
+        .left {
+            width: 0 !important;
+        }
+        .right {
+            width: 100% !important;
+        }
+    }
+}
+
+@import "./../../components/sidebar_mb";
+@import "./../../components/logo_partner";
+@import "./../../components/footer";
+
+@import "./../../components/product_two";
+@import "./../../components/product_three";
+@import "./../../components/product_five";
+@import "./../../components/product_item";
+@import "./../../components/box_news.scss";
+@import "~toastr";
+@import "~line-awesome/dist/line-awesome/css/line-awesome.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.service {
+    margin: 20px 0;
+    .lists {
+        .item {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            .icon {
+                margin-right: 5px;
+                span {
+                    font-size: 30px;
+                    color: #00b33c;
+                }
+            }
+            .text {
+                font-weight: 600;
+                font-size: 12px;
+                color: #222529;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
